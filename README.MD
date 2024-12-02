@@ -1,4 +1,4 @@
-# Mi Proyecto  
+# Software Maintance Project  
 
 ## Descripción  
 Proyecto de ejemplo con Flask para gestionar un sistema simple de login, dashboard y perfil con diferentes tipos de usuarios.  
@@ -12,10 +12,10 @@ Proyecto de ejemplo con Flask para gestionar un sistema simple de login, dashboa
 5. **Como** un **usuario**, **quiero** **poder editar mis datos de perfil**, **para** **asegurar que mi información sea correcta y actual**.  
 
 ## Requisitos  
-- Python 3.x  
+- Python  
 - pip  
 
-## Instalación  
+## Instalación del proyecto 
 1. Clona el repositorio.  
 2. Crea un entorno virtual y activa:  
    ```bash  
