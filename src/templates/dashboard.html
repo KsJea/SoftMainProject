@@ -1,0 +1,19 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Dashboard - {{ user.username }}</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>  
+<body>  
+    <h1>Bienvenido, {{ user.username }}</h1>  
+    <p><strong>Email:</strong> {{ user.email }}</p>  
+    <p><strong>Rol:</strong> {{ user.role }}</p>  
+    <a href="/profile/{{ user.username }}">Mi Perfil</a>  
+    <a href="/notifications">Ver Notificaciones</a>  
+    <form action="/search" method="get">  
+        <input type="text" name="query" placeholder="Buscar elementos">  
+        <button type="submit">Buscar</button>  
+    </form>  
+</body>  
+</html>

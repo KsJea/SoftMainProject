@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Notificaciones</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>  
+<body>  
+    <h1>Notificaciones</h1>  
+    <form action="/add_notification" method="post">  
+        <label for="notification">Nueva Notificación:</label>  
+        <input type="text" id="notification" name="notification" required>  
+        <button type="submit">Añadir</button>  
+    </form>  
+    <ul>  
+        {% for notification in notifications %}  
+            <li>{{ notification }}</li>  
+        {% endfor %}  
+    </ul>  
+    <a href="/dashboard/user1">Volver al Dashboard</a>  
+</body>  
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Resultados de Búsqueda</title>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>  
+<body>  
+    <h1>Resultados de Búsqueda</h1>  
+    <ul>  
+        {% for item in items %}  
+            <li>{{ item }}</li>  
+        {% else %}  
+            <li>No se encontraron resultados.</li>  
+        {% endfor %}  
+    </ul>  
+    <a href="/dashboard/user1">Volver al Dashboard</a>  
+</body>  
+</html>
